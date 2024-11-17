@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Nombre del gasto -->
+    <TextView
+        android:id="@+id/txvNombreGasto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sin asignar"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Precio del gasto -->
+    <TextView
+        android:id="@+id/txvPrecioGasto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sin asignar"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txvNombreGasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cantidad del gasto -->
+    <TextView
+        android:id="@+id/txvCantidadGasto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sin asignar"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txvPrecioGasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtotal del gasto -->
+    <TextView
+        android:id="@+id/txvSubtotalGasto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sin asignar"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txvCantidadGasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Separador -->
+    <View
+        android:id="@+id/vSeparator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#676060"
+        app:layout_constraintTop_toBottomOf="@id/txvSubtotalGasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
